@@ -63,8 +63,6 @@ module PaperTrail
 
       event = Events::Update.new(@record, false, false, changes)
 
-      return unless force || event.changed_notably?
-
       # Merge data from `Event` with data from PT-AT. We no longer use
       # `data_for_update_columns` but PT-AT still does.
       data = event.data.merge(data_for_update_columns)
@@ -76,13 +74,13 @@ module PaperTrail
       version_class = record.class.paper_trail.version_class
 
       version_class.after_transaction do
-        VersionJob.perform_async(
-          version_class,
+        VersionJob.perform_later(
+          version_class.to_s,
           data.merge(
             :item_id => record.id,
             :item_type => record.class.name
-          ),
-          event
+          ).to_json,
+          event.to_s
         )
       end
     end

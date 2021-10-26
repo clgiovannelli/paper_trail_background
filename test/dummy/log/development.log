@@ -1,0 +1,1084 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+Migrating to Model (20211025131132)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211025131132"]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-10-25 13:11:41.525605"], ["updated_at", "2021-10-25 13:11:41.525605"]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+Migrating to Model (20211025131132)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20211025131132"]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+Migrating to CreatePosts (20211025131239)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20211025131239_create_posts.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211025131239_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211025131239"]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (9.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+Migrating to CreateVersions (20211025131539)
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20211025131539_create_versions.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "versions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "item_type" varchar NOT NULL, "item_id" integer NOT NULL, "event" varchar NOT NULL, "whodunnit" varchar, "object" text(1073741823), "created_at" datetime)[0m
+  ↳ db/migrate/20211025131539_create_versions.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_versions_on_item_type_and_item_id" ON "versions" ("item_type", "item_id")[0m
+  ↳ db/migrate/20211025131539_create_versions.rb:34
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211025131539"]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Test 1"], ["body", "Body Test 2"], ["created_at", "2021-10-25 13:17:08.149077"], ["updated_at", "2021-10-25 13:17:08.149077"]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Test 1"], ["body", "Body Test 2"], ["created_at", "2021-10-25 13:25:38.387175"], ["updated_at", "2021-10-25 13:25:38.387175"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 1]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Test 1"], ["body", "Body Test 1"], ["created_at", "2021-10-26 07:48:45.599827"], ["updated_at", "2021-10-26 07:48:45.599827"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Test 1"], ["body", "Body Test 1"], ["created_at", "2021-10-26 08:09:10.413710"], ["updated_at", "2021-10-26 08:09:10.413710"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 2]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 3]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Test 1"], ["body", "Body Test 1"], ["created_at", "2021-10-26 08:34:32.980843"], ["updated_at", "2021-10-26 08:34:32.980843"]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 4]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Test 1"], ["body", "Body Test 1"], ["created_at", "2021-10-26 08:40:56.277822"], ["updated_at", "2021-10-26 08:40:56.277822"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Test 1"], ["body", "Body Test 1"], ["created_at", "2021-10-26 08:41:27.272406"], ["updated_at", "2021-10-26 08:41:27.272406"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Test 1"], ["body", "Body Test 1"], ["created_at", "2021-10-26 08:42:34.013385"], ["updated_at", "2021-10-26 08:42:34.013385"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+dsd
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Test 1"], ["body", "Body Test 1"], ["created_at", "2021-10-26 08:43:05.817971"], ["updated_at", "2021-10-26 08:43:05.817971"]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+Symbol
+create
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Test 1"], ["body", "Body Test 1"], ["created_at", "2021-10-26 08:44:20.261139"], ["updated_at", "2021-10-26 08:44:20.261139"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Test 1"], ["body", "Body Test 1"], ["created_at", "2021-10-26 08:44:54.483596"], ["updated_at", "2021-10-26 08:44:54.483596"]]
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 5]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued VersionJob (Job ID: d1d6727e-3230-4514-a0bd-af8e94369efc) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":5,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 5\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:40:56.277822000 Z\\nupdated_at: 2021-10-26 08:40:56.277822000 Z\\n\"}", "destroy"
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 6]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued VersionJob (Job ID: 3d1958c6-f6cd-42cf-993a-008d5782f398) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":6,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 6\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:41:27.272406000 Z\\nupdated_at: 2021-10-26 08:41:27.272406000 Z\\n\"}", "destroy"
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 7]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued VersionJob (Job ID: 97a7736d-8573-4442-9b71-b5220c2a5334) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":7,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 7\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:42:34.013385000 Z\\nupdated_at: 2021-10-26 08:42:34.013385000 Z\\n\"}", "destroy"
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (1.1ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 8]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued VersionJob (Job ID: 75687c70-461c-483b-8cb3-109094618073) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":8,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 8\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:43:05.817971000 Z\\nupdated_at: 2021-10-26 08:43:05.817971000 Z\\n\"}", "destroy"
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 9]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued VersionJob (Job ID: f9ccf57c-2725-43e7-b239-1ecdd3251067) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":9,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 9\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:44:20.261139000 Z\\nupdated_at: 2021-10-26 08:44:20.261139000 Z\\n\"}", "destroy"
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 10]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued VersionJob (Job ID: a079a59f-7165-41fd-99f9-c382c9dec628) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":10,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 10\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:44:54.483596000 Z\\nupdated_at: 2021-10-26 08:44:54.483596000 Z\\n\"}", "destroy"
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073] Performing VersionJob (Job ID: 75687c70-461c-483b-8cb3-109094618073) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":8,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 8\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:43:05.817971000 Z\\nupdated_at: 2021-10-26 08:43:05.817971000 Z\\n\"}", "destroy"
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067] Performing VersionJob (Job ID: f9ccf57c-2725-43e7-b239-1ecdd3251067) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":9,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 9\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:44:20.261139000 Z\\nupdated_at: 2021-10-26 08:44:20.261139000 Z\\n\"}", "destroy"
+[ActiveJob] [VersionJob] [3d1958c6-f6cd-42cf-993a-008d5782f398] Performing VersionJob (Job ID: 3d1958c6-f6cd-42cf-993a-008d5782f398) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":6,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 6\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:41:27.272406000 Z\\nupdated_at: 2021-10-26 08:41:27.272406000 Z\\n\"}", "destroy"
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc] Performing VersionJob (Job ID: d1d6727e-3230-4514-a0bd-af8e94369efc) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":5,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 5\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:40:56.277822000 Z\\nupdated_at: 2021-10-26 08:40:56.277822000 Z\\n\"}", "destroy"
+[ActiveJob] [VersionJob] [97a7736d-8573-4442-9b71-b5220c2a5334] Performing VersionJob (Job ID: 97a7736d-8573-4442-9b71-b5220c2a5334) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":7,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 7\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:42:34.013385000 Z\\nupdated_at: 2021-10-26 08:42:34.013385000 Z\\n\"}", "destroy"
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628] Performing VersionJob (Job ID: a079a59f-7165-41fd-99f9-c382c9dec628) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":10,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 10\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:44:54.483596000 Z\\nupdated_at: 2021-10-26 08:44:54.483596000 Z\\n\"}", "destroy"
+[ActiveJob] [VersionJob] [3d1958c6-f6cd-42cf-993a-008d5782f398]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [3d1958c6-f6cd-42cf-993a-008d5782f398]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067]   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628]   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073]   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc]   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [3d1958c6-f6cd-42cf-993a-008d5782f398]   [1m[36mPaperTrail::Version Create (0.9ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 6], ["event", "destroy"], ["object", "---\nid: 6\ntitle: Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 08:41:27.272406000 Z\nupdated_at: 2021-10-26 08:41:27.272406000 Z\n"], ["created_at", "2021-10-26 08:57:00.554344"]]
+[ActiveJob] [VersionJob] [3d1958c6-f6cd-42cf-993a-008d5782f398]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [3d1958c6-f6cd-42cf-993a-008d5782f398]   [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [3d1958c6-f6cd-42cf-993a-008d5782f398]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [3d1958c6-f6cd-42cf-993a-008d5782f398] Performed VersionJob (Job ID: 3d1958c6-f6cd-42cf-993a-008d5782f398) from Sidekiq(default) in 20112.72ms
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067]   [1m[36mPaperTrail::Version Create (15022.8ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 9], ["event", "destroy"], ["object", "---\nid: 9\ntitle: Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 08:44:20.261139000 Z\nupdated_at: 2021-10-26 08:44:20.261139000 Z\n"], ["created_at", "2021-10-26 08:57:00.556869"]]
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067]   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067] Error performing VersionJob (Job ID: f9ccf57c-2725-43e7-b239-1ecdd3251067) from Sidekiq(default) in 20115.96ms: ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: INSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)):
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:108:in `step'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:108:in `block in each'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:107:in `loop'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:107:in `each'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:222:in `to_a'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:222:in `block (2 levels) in exec_query'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:213:in `block in exec_query'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:581:in `block (2 levels) in log'
+/usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/2.5.0/monitor.rb:235:in `mon_synchronize'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:580:in `block in log'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:571:in `log'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:212:in `exec_query'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:130:in `exec_insert'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:162:in `insert'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/query_cache.rb:21:in `insert'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:187:in `_insert_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:734:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/counter_cache.rb:184:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/locking/optimistic.rb:70:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/attribute_methods/dirty.rb:140:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:346:in `block in _create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:132:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:816:in `_run_create_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:346:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/timestamp.rb:102:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:705:in `create_or_update'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:342:in `block in create_or_update'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:132:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:816:in `_run_save_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:342:in `create_or_update'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:308:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/validations.rb:52:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:315:in `block in save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:387:in `block in with_transaction_returning_status'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/ar_after_transaction-0.5.0/lib/ar_after_transaction.rb:19:in `block in transaction_with_after'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `block in transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/transaction.rb:239:in `block in within_new_transaction'
+/usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/2.5.0/monitor.rb:235:in `mon_synchronize'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/transaction.rb:236:in `within_new_transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:212:in `transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/ar_after_transaction-0.5.0/lib/ar_after_transaction.rb:17:in `transaction_with_after'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:385:in `with_transaction_returning_status'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:315:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/suppressor.rb:48:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:53:in `create!'
+/home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5:in `perform'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:39:in `block in perform_now'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:109:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/i18n-1.8.10/lib/i18n.rb:314:in `with_locale'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/translation.rb:9:in `block (2 levels) in <module:Translation>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `instance_exec'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:26:in `block (4 levels) in <module:Logging>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications.rb:168:in `block in instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications.rb:168:in `instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:25:in `block (3 levels) in <module:Logging>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:46:in `block in tag_logger'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:46:in `tag_logger'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:22:in `block (2 levels) in <module:Logging>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `instance_exec'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:136:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:38:in `perform_now'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:24:in `block in execute'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:109:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/railtie.rb:28:in `block (4 levels) in <class:Railtie>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:87:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:73:in `block in wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:83:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:72:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/railtie.rb:27:in `block (3 levels) in <class:Railtie>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `instance_exec'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:136:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:22:in `execute'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/queue_adapters/sidekiq_adapter.rb:42:in `perform'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:192:in `execute_job'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:165:in `block (2 levels) in process'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/middleware/chain.rb:128:in `block in invoke'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/middleware/chain.rb:133:in `invoke'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:164:in `block in process'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:137:in `block (6 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/job_retry.rb:109:in `local'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:136:in `block (5 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/rails.rb:43:in `block in call'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:87:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:73:in `block in wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:87:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:72:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/rails.rb:42:in `call'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:132:in `block (4 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:250:in `stats'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:127:in `block (3 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/job_logger.rb:8:in `call'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:126:in `block (2 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/job_retry.rb:74:in `global'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:125:in `block in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/logging.rb:48:in `with_context'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/logging.rb:42:in `with_job_hash_context'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:124:in `dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:163:in `process'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:83:in `process_one'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:71:in `run'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/util.rb:16:in `watchdog'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/util.rb:25:in `block in safe_thread'
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628]   [1m[36mPaperTrail::Version Create (20027.2ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 10], ["event", "destroy"], ["object", "---\nid: 10\ntitle: Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 08:44:54.483596000 Z\nupdated_at: 2021-10-26 08:44:54.483596000 Z\n"], ["created_at", "2021-10-26 08:57:00.557895"]]
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628]   [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628] Error performing VersionJob (Job ID: a079a59f-7165-41fd-99f9-c382c9dec628) from Sidekiq(default) in 20112.66ms: ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: INSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)):
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:108:in `step'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:108:in `block in each'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:107:in `loop'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:107:in `each'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:222:in `to_a'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:222:in `block (2 levels) in exec_query'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:213:in `block in exec_query'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:581:in `block (2 levels) in log'
+/usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/2.5.0/monitor.rb:235:in `mon_synchronize'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:580:in `block in log'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:571:in `log'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:212:in `exec_query'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:130:in `exec_insert'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:162:in `insert'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/query_cache.rb:21:in `insert'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:187:in `_insert_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:734:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/counter_cache.rb:184:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/locking/optimistic.rb:70:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/attribute_methods/dirty.rb:140:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:346:in `block in _create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:132:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:816:in `_run_create_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:346:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/timestamp.rb:102:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:705:in `create_or_update'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:342:in `block in create_or_update'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:132:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:816:in `_run_save_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:342:in `create_or_update'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:308:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/validations.rb:52:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:315:in `block in save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:387:in `block in with_transaction_returning_status'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/ar_after_transaction-0.5.0/lib/ar_after_transaction.rb:19:in `block in transaction_with_after'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `block in transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/transaction.rb:239:in `block in within_new_transaction'
+/usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/2.5.0/monitor.rb:235:in `mon_synchronize'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/transaction.rb:236:in `within_new_transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:212:in `transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/ar_after_transaction-0.5.0/lib/ar_after_transaction.rb:17:in `transaction_with_after'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:385:in `with_transaction_returning_status'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:315:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/suppressor.rb:48:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:53:in `create!'
+/home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5:in `perform'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:39:in `block in perform_now'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:109:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/i18n-1.8.10/lib/i18n.rb:314:in `with_locale'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/translation.rb:9:in `block (2 levels) in <module:Translation>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `instance_exec'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:26:in `block (4 levels) in <module:Logging>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications.rb:168:in `block in instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications.rb:168:in `instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:25:in `block (3 levels) in <module:Logging>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:46:in `block in tag_logger'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:46:in `tag_logger'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:22:in `block (2 levels) in <module:Logging>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `instance_exec'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:136:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:38:in `perform_now'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:24:in `block in execute'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:109:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/railtie.rb:28:in `block (4 levels) in <class:Railtie>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:87:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:73:in `block in wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:83:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:72:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/railtie.rb:27:in `block (3 levels) in <class:Railtie>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `instance_exec'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:136:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:22:in `execute'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/queue_adapters/sidekiq_adapter.rb:42:in `perform'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:192:in `execute_job'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:165:in `block (2 levels) in process'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/middleware/chain.rb:128:in `block in invoke'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/middleware/chain.rb:133:in `invoke'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:164:in `block in process'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:137:in `block (6 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/job_retry.rb:109:in `local'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:136:in `block (5 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/rails.rb:43:in `block in call'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:87:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:73:in `block in wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:87:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:72:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/rails.rb:42:in `call'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:132:in `block (4 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:250:in `stats'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:127:in `block (3 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/job_logger.rb:8:in `call'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:126:in `block (2 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/job_retry.rb:74:in `global'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:125:in `block in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/logging.rb:48:in `with_context'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/logging.rb:42:in `with_job_hash_context'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:124:in `dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:163:in `process'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:83:in `process_one'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:71:in `run'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/util.rb:16:in `watchdog'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/util.rb:25:in `block in safe_thread'
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc]   [1m[36mPaperTrail::Version Create (10017.7ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 5], ["event", "destroy"], ["object", "---\nid: 5\ntitle: Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 08:40:56.277822000 Z\nupdated_at: 2021-10-26 08:40:56.277822000 Z\n"], ["created_at", "2021-10-26 08:57:00.558776"]]
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc]   [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc] Error performing VersionJob (Job ID: d1d6727e-3230-4514-a0bd-af8e94369efc) from Sidekiq(default) in 20118.45ms: ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: INSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)):
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:108:in `step'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:108:in `block in each'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:107:in `loop'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:107:in `each'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:222:in `to_a'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:222:in `block (2 levels) in exec_query'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:213:in `block in exec_query'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:581:in `block (2 levels) in log'
+/usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/2.5.0/monitor.rb:235:in `mon_synchronize'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:580:in `block in log'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:571:in `log'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:212:in `exec_query'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:130:in `exec_insert'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:162:in `insert'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/query_cache.rb:21:in `insert'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:187:in `_insert_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:734:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/counter_cache.rb:184:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/locking/optimistic.rb:70:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/attribute_methods/dirty.rb:140:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:346:in `block in _create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:132:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:816:in `_run_create_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:346:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/timestamp.rb:102:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:705:in `create_or_update'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:342:in `block in create_or_update'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:132:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:816:in `_run_save_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:342:in `create_or_update'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:308:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/validations.rb:52:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:315:in `block in save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:387:in `block in with_transaction_returning_status'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/ar_after_transaction-0.5.0/lib/ar_after_transaction.rb:19:in `block in transaction_with_after'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `block in transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/transaction.rb:239:in `block in within_new_transaction'
+/usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/2.5.0/monitor.rb:235:in `mon_synchronize'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/transaction.rb:236:in `within_new_transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:212:in `transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/ar_after_transaction-0.5.0/lib/ar_after_transaction.rb:17:in `transaction_with_after'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:385:in `with_transaction_returning_status'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:315:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/suppressor.rb:48:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:53:in `create!'
+/home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5:in `perform'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:39:in `block in perform_now'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:109:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/i18n-1.8.10/lib/i18n.rb:314:in `with_locale'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/translation.rb:9:in `block (2 levels) in <module:Translation>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `instance_exec'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:26:in `block (4 levels) in <module:Logging>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications.rb:168:in `block in instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications.rb:168:in `instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:25:in `block (3 levels) in <module:Logging>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:46:in `block in tag_logger'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:46:in `tag_logger'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:22:in `block (2 levels) in <module:Logging>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `instance_exec'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:136:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:38:in `perform_now'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:24:in `block in execute'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:109:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/railtie.rb:28:in `block (4 levels) in <class:Railtie>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:87:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:73:in `block in wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:83:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:72:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/railtie.rb:27:in `block (3 levels) in <class:Railtie>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `instance_exec'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:136:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:22:in `execute'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/queue_adapters/sidekiq_adapter.rb:42:in `perform'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:192:in `execute_job'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:165:in `block (2 levels) in process'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/middleware/chain.rb:128:in `block in invoke'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/middleware/chain.rb:133:in `invoke'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:164:in `block in process'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:137:in `block (6 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/job_retry.rb:109:in `local'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:136:in `block (5 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/rails.rb:43:in `block in call'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:87:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:73:in `block in wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:87:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:72:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/rails.rb:42:in `call'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:132:in `block (4 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:250:in `stats'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:127:in `block (3 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/job_logger.rb:8:in `call'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:126:in `block (2 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/job_retry.rb:74:in `global'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:125:in `block in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/logging.rb:48:in `with_context'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/logging.rb:42:in `with_job_hash_context'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:124:in `dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:163:in `process'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:83:in `process_one'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:71:in `run'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/util.rb:16:in `watchdog'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/util.rb:25:in `block in safe_thread'
+[ActiveJob] [VersionJob] [97a7736d-8573-4442-9b71-b5220c2a5334] Error performing VersionJob (Job ID: 97a7736d-8573-4442-9b71-b5220c2a5334) from Sidekiq(default) in 20113.65ms: ActiveRecord::ConnectionTimeoutError (could not obtain a connection from the pool within 5.000 seconds (waited 20.037 seconds); all pooled connections were in use):
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:201:in `block in wait_poll'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:190:in `loop'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:190:in `wait_poll'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:151:in `internal_poll'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `internal_poll'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:145:in `block in poll'
+/usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/2.5.0/monitor.rb:235:in `mon_synchronize'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:155:in `synchronize'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:145:in `poll'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:818:in `acquire_connection'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_handling.rb:90:in `connection'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:212:in `transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/ar_after_transaction-0.5.0/lib/ar_after_transaction.rb:17:in `transaction_with_after'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:385:in `with_transaction_returning_status'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:315:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/suppressor.rb:48:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:53:in `create!'
+/home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5:in `perform'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:39:in `block in perform_now'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:109:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/i18n-1.8.10/lib/i18n.rb:314:in `with_locale'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/translation.rb:9:in `block (2 levels) in <module:Translation>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `instance_exec'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:26:in `block (4 levels) in <module:Logging>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications.rb:168:in `block in instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications.rb:168:in `instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:25:in `block (3 levels) in <module:Logging>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:46:in `block in tag_logger'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:46:in `tag_logger'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:22:in `block (2 levels) in <module:Logging>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `instance_exec'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:136:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:38:in `perform_now'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:24:in `block in execute'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:109:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/railtie.rb:28:in `block (4 levels) in <class:Railtie>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:87:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:73:in `block in wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:83:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:72:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/railtie.rb:27:in `block (3 levels) in <class:Railtie>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `instance_exec'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:136:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:22:in `execute'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/queue_adapters/sidekiq_adapter.rb:42:in `perform'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:192:in `execute_job'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:165:in `block (2 levels) in process'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/middleware/chain.rb:128:in `block in invoke'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/middleware/chain.rb:133:in `invoke'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:164:in `block in process'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:137:in `block (6 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/job_retry.rb:109:in `local'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:136:in `block (5 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/rails.rb:43:in `block in call'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:87:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:73:in `block in wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:87:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:72:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/rails.rb:42:in `call'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:132:in `block (4 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:250:in `stats'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:127:in `block (3 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/job_logger.rb:8:in `call'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:126:in `block (2 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/job_retry.rb:74:in `global'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:125:in `block in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/logging.rb:48:in `with_context'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/logging.rb:42:in `with_job_hash_context'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:124:in `dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:163:in `process'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:83:in `process_one'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:71:in `run'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/util.rb:16:in `watchdog'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/util.rb:25:in `block in safe_thread'
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073]   [1m[36mPaperTrail::Version Create (5013.1ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 8], ["event", "destroy"], ["object", "---\nid: 8\ntitle: Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 08:43:05.817971000 Z\nupdated_at: 2021-10-26 08:43:05.817971000 Z\n"], ["created_at", "2021-10-26 08:57:00.558193"]]
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073]   [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073] Error performing VersionJob (Job ID: 75687c70-461c-483b-8cb3-109094618073) from Sidekiq(default) in 20120.59ms: ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: INSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)):
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:108:in `step'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:108:in `block in each'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:107:in `loop'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:107:in `each'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:222:in `to_a'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:222:in `block (2 levels) in exec_query'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:213:in `block in exec_query'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:581:in `block (2 levels) in log'
+/usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/2.5.0/monitor.rb:235:in `mon_synchronize'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:580:in `block in log'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract_adapter.rb:571:in `log'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/sqlite3_adapter.rb:212:in `exec_query'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:130:in `exec_insert'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:162:in `insert'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/query_cache.rb:21:in `insert'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:187:in `_insert_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:734:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/counter_cache.rb:184:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/locking/optimistic.rb:70:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/attribute_methods/dirty.rb:140:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:346:in `block in _create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:132:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:816:in `_run_create_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:346:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/timestamp.rb:102:in `_create_record'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:705:in `create_or_update'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:342:in `block in create_or_update'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:132:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:816:in `_run_save_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/callbacks.rb:342:in `create_or_update'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:308:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/validations.rb:52:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:315:in `block in save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:387:in `block in with_transaction_returning_status'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/ar_after_transaction-0.5.0/lib/ar_after_transaction.rb:19:in `block in transaction_with_after'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `block in transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/transaction.rb:239:in `block in within_new_transaction'
+/usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/2.5.0/monitor.rb:235:in `mon_synchronize'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/transaction.rb:236:in `within_new_transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:212:in `transaction'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/ar_after_transaction-0.5.0/lib/ar_after_transaction.rb:17:in `transaction_with_after'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:385:in `with_transaction_returning_status'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/transactions.rb:315:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/suppressor.rb:48:in `save!'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activerecord-5.2.6/lib/active_record/persistence.rb:53:in `create!'
+/home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5:in `perform'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:39:in `block in perform_now'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:109:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/i18n-1.8.10/lib/i18n.rb:314:in `with_locale'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/translation.rb:9:in `block (2 levels) in <module:Translation>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `instance_exec'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:26:in `block (4 levels) in <module:Logging>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications.rb:168:in `block in instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/notifications.rb:168:in `instrument'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:25:in `block (3 levels) in <module:Logging>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:46:in `block in tag_logger'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:46:in `tag_logger'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/logging.rb:22:in `block (2 levels) in <module:Logging>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `instance_exec'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:136:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:38:in `perform_now'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:24:in `block in execute'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:109:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/railtie.rb:28:in `block (4 levels) in <class:Railtie>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:87:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:73:in `block in wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:83:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:72:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/railtie.rb:27:in `block (3 levels) in <class:Railtie>'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `instance_exec'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:136:in `run_callbacks'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/execution.rb:22:in `execute'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activejob-5.2.6/lib/active_job/queue_adapters/sidekiq_adapter.rb:42:in `perform'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:192:in `execute_job'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:165:in `block (2 levels) in process'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/middleware/chain.rb:128:in `block in invoke'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/middleware/chain.rb:133:in `invoke'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:164:in `block in process'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:137:in `block (6 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/job_retry.rb:109:in `local'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:136:in `block (5 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/rails.rb:43:in `block in call'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:87:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:73:in `block in wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/execution_wrapper.rb:87:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/activesupport-5.2.6/lib/active_support/reloader.rb:72:in `wrap'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/rails.rb:42:in `call'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:132:in `block (4 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:250:in `stats'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:127:in `block (3 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/job_logger.rb:8:in `call'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:126:in `block (2 levels) in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/job_retry.rb:74:in `global'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:125:in `block in dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/logging.rb:48:in `with_context'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/logging.rb:42:in `with_job_hash_context'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:124:in `dispatch'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:163:in `process'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:83:in `process_one'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/processor.rb:71:in `run'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/util.rb:16:in `watchdog'
+/home/mona/.rvm/gems/ruby-2.5.8/gems/sidekiq-5.2.9/lib/sidekiq/util.rb:25:in `block in safe_thread'
+  [1m[36mPaperTrail::Version Load (0.2ms)[0m  [1m[34mSELECT  "versions".* FROM "versions" LIMIT ?[0m  [["LIMIT", 11]]
+[ActiveJob] [VersionJob] [97a7736d-8573-4442-9b71-b5220c2a5334] Performing VersionJob (Job ID: 97a7736d-8573-4442-9b71-b5220c2a5334) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":7,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 7\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:42:34.013385000 Z\\nupdated_at: 2021-10-26 08:42:34.013385000 Z\\n\"}", "destroy"
+[ActiveJob] [VersionJob] [97a7736d-8573-4442-9b71-b5220c2a5334]   [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [97a7736d-8573-4442-9b71-b5220c2a5334]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [97a7736d-8573-4442-9b71-b5220c2a5334]   [1m[36mPaperTrail::Version Create (0.5ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 7], ["event", "destroy"], ["object", "---\nid: 7\ntitle: Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 08:42:34.013385000 Z\nupdated_at: 2021-10-26 08:42:34.013385000 Z\n"], ["created_at", "2021-10-26 08:57:44.596173"]]
+[ActiveJob] [VersionJob] [97a7736d-8573-4442-9b71-b5220c2a5334]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [97a7736d-8573-4442-9b71-b5220c2a5334]   [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [97a7736d-8573-4442-9b71-b5220c2a5334]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [97a7736d-8573-4442-9b71-b5220c2a5334] Performed VersionJob (Job ID: 97a7736d-8573-4442-9b71-b5220c2a5334) from Sidekiq(default) in 10.89ms
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067] Performing VersionJob (Job ID: f9ccf57c-2725-43e7-b239-1ecdd3251067) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":9,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 9\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:44:20.261139000 Z\\nupdated_at: 2021-10-26 08:44:20.261139000 Z\\n\"}", "destroy"
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067]   [1m[36mPaperTrail::Version Create (0.2ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 9], ["event", "destroy"], ["object", "---\nid: 9\ntitle: Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 08:44:20.261139000 Z\nupdated_at: 2021-10-26 08:44:20.261139000 Z\n"], ["created_at", "2021-10-26 08:57:44.612452"]]
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067]   [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [f9ccf57c-2725-43e7-b239-1ecdd3251067] Performed VersionJob (Job ID: f9ccf57c-2725-43e7-b239-1ecdd3251067) from Sidekiq(default) in 9.68ms
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc] Performing VersionJob (Job ID: d1d6727e-3230-4514-a0bd-af8e94369efc) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":5,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 5\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:40:56.277822000 Z\\nupdated_at: 2021-10-26 08:40:56.277822000 Z\\n\"}", "destroy"
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc]   [1m[36mPaperTrail::Version Create (0.3ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 5], ["event", "destroy"], ["object", "---\nid: 5\ntitle: Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 08:40:56.277822000 Z\nupdated_at: 2021-10-26 08:40:56.277822000 Z\n"], ["created_at", "2021-10-26 08:57:44.626821"]]
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc]   [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [d1d6727e-3230-4514-a0bd-af8e94369efc] Performed VersionJob (Job ID: d1d6727e-3230-4514-a0bd-af8e94369efc) from Sidekiq(default) in 6.27ms
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "versions"[0m
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628] Performing VersionJob (Job ID: a079a59f-7165-41fd-99f9-c382c9dec628) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":10,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 10\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:44:54.483596000 Z\\nupdated_at: 2021-10-26 08:44:54.483596000 Z\\n\"}", "destroy"
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628]   [1m[36mPaperTrail::Version Create (0.2ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 10], ["event", "destroy"], ["object", "---\nid: 10\ntitle: Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 08:44:54.483596000 Z\nupdated_at: 2021-10-26 08:44:54.483596000 Z\n"], ["created_at", "2021-10-26 08:58:01.528007"]]
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628]   [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [a079a59f-7165-41fd-99f9-c382c9dec628] Performed VersionJob (Job ID: a079a59f-7165-41fd-99f9-c382c9dec628) from Sidekiq(default) in 6.62ms
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073] Performing VersionJob (Job ID: 75687c70-461c-483b-8cb3-109094618073) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":8,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 8\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:43:05.817971000 Z\\nupdated_at: 2021-10-26 08:43:05.817971000 Z\\n\"}", "destroy"
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073]   [1m[36mPaperTrail::Version Create (1.3ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 8], ["event", "destroy"], ["object", "---\nid: 8\ntitle: Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 08:43:05.817971000 Z\nupdated_at: 2021-10-26 08:43:05.817971000 Z\n"], ["created_at", "2021-10-26 08:58:05.961728"]]
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073]   [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [75687c70-461c-483b-8cb3-109094618073] Performed VersionJob (Job ID: 75687c70-461c-483b-8cb3-109094618073) from Sidekiq(default) in 11.13ms
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Test 1"], ["body", "Body Test 1"], ["created_at", "2021-10-26 08:59:04.342345"], ["updated_at", "2021-10-26 08:59:04.342345"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued VersionJob (Job ID: 301c5364-5c3f-4d39-8376-5f533e57558e) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"create\",\"whodunnit\":null,\"created_at\":\"2021-10-26T08:59:04.342Z\",\"item_id\":11,\"item_type\":\"Post\"}", "create"
+[ActiveJob] [VersionJob] [301c5364-5c3f-4d39-8376-5f533e57558e] Performing VersionJob (Job ID: 301c5364-5c3f-4d39-8376-5f533e57558e) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"create\",\"whodunnit\":null,\"created_at\":\"2021-10-26T08:59:04.342Z\",\"item_id\":11,\"item_type\":\"Post\"}", "create"
+[ActiveJob] [VersionJob] [301c5364-5c3f-4d39-8376-5f533e57558e]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [301c5364-5c3f-4d39-8376-5f533e57558e]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [301c5364-5c3f-4d39-8376-5f533e57558e]   [1m[36mPaperTrail::Version Create (0.2ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "created_at") VALUES (?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 11], ["event", "create"], ["created_at", "2021-10-26 08:59:04.342000"]]
+[ActiveJob] [VersionJob] [301c5364-5c3f-4d39-8376-5f533e57558e]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [301c5364-5c3f-4d39-8376-5f533e57558e]   [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [301c5364-5c3f-4d39-8376-5f533e57558e]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [301c5364-5c3f-4d39-8376-5f533e57558e] Performed VersionJob (Job ID: 301c5364-5c3f-4d39-8376-5f533e57558e) from Sidekiq(default) in 18.2ms
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "versions"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "versions"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Test 1"], ["body", "Body Test 1"], ["created_at", "2021-10-26 08:59:49.526077"], ["updated_at", "2021-10-26 08:59:49.526077"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued VersionJob (Job ID: ab13cb79-f3ff-4cf9-be28-2a71791a26f9) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"create\",\"whodunnit\":null,\"created_at\":\"2021-10-26T08:59:49.526Z\",\"item_id\":12,\"item_type\":\"Post\"}", "create"
+[ActiveJob] [VersionJob] [ab13cb79-f3ff-4cf9-be28-2a71791a26f9] Performing VersionJob (Job ID: ab13cb79-f3ff-4cf9-be28-2a71791a26f9) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"create\",\"whodunnit\":null,\"created_at\":\"2021-10-26T08:59:49.526Z\",\"item_id\":12,\"item_type\":\"Post\"}", "create"
+[ActiveJob] [VersionJob] [ab13cb79-f3ff-4cf9-be28-2a71791a26f9]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [ab13cb79-f3ff-4cf9-be28-2a71791a26f9]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [ab13cb79-f3ff-4cf9-be28-2a71791a26f9]   [1m[36mPaperTrail::Version Create (0.3ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "created_at") VALUES (?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 12], ["event", "create"], ["created_at", "2021-10-26 08:59:49.526000"]]
+[ActiveJob] [VersionJob] [ab13cb79-f3ff-4cf9-be28-2a71791a26f9]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [ab13cb79-f3ff-4cf9-be28-2a71791a26f9]   [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [ab13cb79-f3ff-4cf9-be28-2a71791a26f9]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [ab13cb79-f3ff-4cf9-be28-2a71791a26f9] Performed VersionJob (Job ID: ab13cb79-f3ff-4cf9-be28-2a71791a26f9) from Sidekiq(default) in 9.29ms
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "versions"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Update (0.2ms)[0m  [1m[33mUPDATE "posts" SET "title" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", "Updated Title Test 1"], ["updated_at", "2021-10-26 09:00:25.397862"], ["id", 12]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued VersionJob (Job ID: f4789c71-b00b-45c0-94c1-897d356bce66) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T09:00:25.397Z\",\"object\":\"---\\nid: 12\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:59:49.526077000 Z\\nupdated_at: 2021-10-26 08:59:49.526077000 Z\\n\",\"item_id\":12,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [f4789c71-b00b-45c0-94c1-897d356bce66] Performing VersionJob (Job ID: f4789c71-b00b-45c0-94c1-897d356bce66) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T09:00:25.397Z\",\"object\":\"---\\nid: 12\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:59:49.526077000 Z\\nupdated_at: 2021-10-26 08:59:49.526077000 Z\\n\",\"item_id\":12,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [f4789c71-b00b-45c0-94c1-897d356bce66]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [f4789c71-b00b-45c0-94c1-897d356bce66]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [f4789c71-b00b-45c0-94c1-897d356bce66]   [1m[36mPaperTrail::Version Create (0.3ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 12], ["event", "update"], ["object", "---\nid: 12\ntitle: Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 08:59:49.526077000 Z\nupdated_at: 2021-10-26 08:59:49.526077000 Z\n"], ["created_at", "2021-10-26 09:00:25.397000"]]
+[ActiveJob] [VersionJob] [f4789c71-b00b-45c0-94c1-897d356bce66]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [f4789c71-b00b-45c0-94c1-897d356bce66]   [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [f4789c71-b00b-45c0-94c1-897d356bce66]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [f4789c71-b00b-45c0-94c1-897d356bce66] Performed VersionJob (Job ID: f4789c71-b00b-45c0-94c1-897d356bce66) from Sidekiq(default) in 9.2ms
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "versions"[0m
+  [1m[36mPaperTrail::Version Load (0.2ms)[0m  [1m[34mSELECT  "versions".* FROM "versions" ORDER BY "versions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 11]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [c9d03da2-adb4-41f4-93e4-c580f48d5b59] Performing VersionJob (Job ID: c9d03da2-adb4-41f4-93e4-c580f48d5b59) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":11,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 11\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:59:04.342345000 Z\\nupdated_at: 2021-10-26 08:59:04.342345000 Z\\n\"}", "destroy"
+[ActiveJob] [VersionJob] [c9d03da2-adb4-41f4-93e4-c580f48d5b59]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [c9d03da2-adb4-41f4-93e4-c580f48d5b59]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] Enqueued VersionJob (Job ID: c9d03da2-adb4-41f4-93e4-c580f48d5b59) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"item_id\":11,\"item_type\":\"Post\",\"event\":\"destroy\",\"whodunnit\":null,\"object\":\"---\\nid: 11\\ntitle: Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:59:04.342345000 Z\\nupdated_at: 2021-10-26 08:59:04.342345000 Z\\n\"}", "destroy"
+[ActiveJob] [VersionJob] [c9d03da2-adb4-41f4-93e4-c580f48d5b59]   [1m[36mPaperTrail::Version Create (1.1ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 11], ["event", "destroy"], ["object", "---\nid: 11\ntitle: Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 08:59:04.342345000 Z\nupdated_at: 2021-10-26 08:59:04.342345000 Z\n"], ["created_at", "2021-10-26 09:00:49.534588"]]
+[ActiveJob] [VersionJob] [c9d03da2-adb4-41f4-93e4-c580f48d5b59]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [c9d03da2-adb4-41f4-93e4-c580f48d5b59]   [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [c9d03da2-adb4-41f4-93e4-c580f48d5b59]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [c9d03da2-adb4-41f4-93e4-c580f48d5b59] Performed VersionJob (Job ID: c9d03da2-adb4-41f4-93e4-c580f48d5b59) from Sidekiq(default) in 6.37ms
+  [1m[36mPaperTrail::Version Load (0.1ms)[0m  [1m[34mSELECT  "versions".* FROM "versions" ORDER BY "versions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Update (0.2ms)[0m  [1m[33mUPDATE "posts" SET "title" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", "Updated 2 Title Test 1"], ["updated_at", "2021-10-26 10:08:15.440259"], ["id", 12]]
+record_update
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [96e85c5b-9ba9-46db-bc51-df6d1f0b08a3] Performing VersionJob (Job ID: 96e85c5b-9ba9-46db-bc51-df6d1f0b08a3) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:08:15.440Z\",\"object\":\"---\\nid: 12\\ntitle: Updated Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:59:49.526077000 Z\\nupdated_at: 2021-10-26 09:00:25.397862000 Z\\n\",\"item_id\":12,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [96e85c5b-9ba9-46db-bc51-df6d1f0b08a3]   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [96e85c5b-9ba9-46db-bc51-df6d1f0b08a3]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [96e85c5b-9ba9-46db-bc51-df6d1f0b08a3]   [1m[36mPaperTrail::Version Create (0.6ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 12], ["event", "update"], ["object", "---\nid: 12\ntitle: Updated Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 08:59:49.526077000 Z\nupdated_at: 2021-10-26 09:00:25.397862000 Z\n"], ["created_at", "2021-10-26 10:08:15.440000"]]
+[ActiveJob] [VersionJob] [96e85c5b-9ba9-46db-bc51-df6d1f0b08a3]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] Enqueued VersionJob (Job ID: 96e85c5b-9ba9-46db-bc51-df6d1f0b08a3) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:08:15.440Z\",\"object\":\"---\\nid: 12\\ntitle: Updated Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:59:49.526077000 Z\\nupdated_at: 2021-10-26 09:00:25.397862000 Z\\n\",\"item_id\":12,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [96e85c5b-9ba9-46db-bc51-df6d1f0b08a3]   [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [96e85c5b-9ba9-46db-bc51-df6d1f0b08a3]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [96e85c5b-9ba9-46db-bc51-df6d1f0b08a3] Performed VersionJob (Job ID: 96e85c5b-9ba9-46db-bc51-df6d1f0b08a3) from Sidekiq(default) in 7.4ms
+  [1m[36mPaperTrail::Version Load (0.1ms)[0m  [1m[34mSELECT  "versions".* FROM "versions" ORDER BY "versions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Update (0.1ms)[0m  [1m[33mUPDATE "posts" SET "title" = ? WHERE "posts"."id" = ?[0m  [["title", "Updated 2 Title Test 1"], ["id", 12]]
+  [1m[36mPost Update (2.9ms)[0m  [1m[33mUPDATE "posts" SET "title" = ? WHERE "posts"."id" = ?[0m  [["title", "Updated 3 Title Test 1"], ["id", 12]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Update (4.1ms)[0m  [1m[33mUPDATE "posts" SET "title" = ? WHERE "posts"."id" = ?[0m  [["title", "Updated 4 Title Test 1"], ["id", 12]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Update (3.7ms)[0m  [1m[33mUPDATE "posts" SET "title" = ? WHERE "posts"."id" = ?[0m  [["title", "Updated 5 Title Test 1"], ["id", 12]]
+update_columns
+  [1m[36mPost Update (4.2ms)[0m  [1m[33mUPDATE "posts" SET "title" = ? WHERE "posts"."id" = ?[0m  [["title", "Updated 6 Title Test 1"], ["id", 12]]
+record_update_columns
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Update (0.2ms)[0m  [1m[33mUPDATE "posts" SET "title" = ? WHERE "posts"."id" = ?[0m  [["title", "Updated 6 Title Test 1"], ["id", 12]]
+record_update_columns
+[ActiveJob] Enqueued VersionJob (Job ID: e2e51a05-10aa-4c48-86b0-f2f2ffb73a5b) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:08:15.440Z\",\"object\":\"---\\nid: 12\\ntitle: Updated 6 Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:59:49.526077000 Z\\nupdated_at: 2021-10-26 10:08:15.440259000 Z\\n\",\"item_id\":12,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [e2e51a05-10aa-4c48-86b0-f2f2ffb73a5b] Performing VersionJob (Job ID: e2e51a05-10aa-4c48-86b0-f2f2ffb73a5b) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:08:15.440Z\",\"object\":\"---\\nid: 12\\ntitle: Updated 6 Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:59:49.526077000 Z\\nupdated_at: 2021-10-26 10:08:15.440259000 Z\\n\",\"item_id\":12,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [e2e51a05-10aa-4c48-86b0-f2f2ffb73a5b]   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [e2e51a05-10aa-4c48-86b0-f2f2ffb73a5b]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [e2e51a05-10aa-4c48-86b0-f2f2ffb73a5b]   [1m[36mPaperTrail::Version Create (0.2ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 12], ["event", "update"], ["object", "---\nid: 12\ntitle: Updated 6 Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 08:59:49.526077000 Z\nupdated_at: 2021-10-26 10:08:15.440259000 Z\n"], ["created_at", "2021-10-26 10:08:15.440000"]]
+[ActiveJob] [VersionJob] [e2e51a05-10aa-4c48-86b0-f2f2ffb73a5b]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [e2e51a05-10aa-4c48-86b0-f2f2ffb73a5b]   [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [e2e51a05-10aa-4c48-86b0-f2f2ffb73a5b]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [e2e51a05-10aa-4c48-86b0-f2f2ffb73a5b] Performed VersionJob (Job ID: e2e51a05-10aa-4c48-86b0-f2f2ffb73a5b) from Sidekiq(default) in 4.95ms
+  [1m[36mPost Update (0.2ms)[0m  [1m[33mUPDATE "posts" SET "title" = ? WHERE "posts"."id" = ?[0m  [["title", "Updated 6 Title Test 1"], ["id", 12]]
+record_update_columns
+[ActiveJob] Enqueued VersionJob (Job ID: 4187d0b4-daa8-46c2-8b6b-7f2023831ef6) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:08:15.440Z\",\"object\":\"---\\nid: 12\\ntitle: Updated 6 Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:59:49.526077000 Z\\nupdated_at: 2021-10-26 10:08:15.440259000 Z\\n\",\"item_id\":12,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [4187d0b4-daa8-46c2-8b6b-7f2023831ef6] Performing VersionJob (Job ID: 4187d0b4-daa8-46c2-8b6b-7f2023831ef6) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:08:15.440Z\",\"object\":\"---\\nid: 12\\ntitle: Updated 6 Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 08:59:49.526077000 Z\\nupdated_at: 2021-10-26 10:08:15.440259000 Z\\n\",\"item_id\":12,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [4187d0b4-daa8-46c2-8b6b-7f2023831ef6]   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [4187d0b4-daa8-46c2-8b6b-7f2023831ef6]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [4187d0b4-daa8-46c2-8b6b-7f2023831ef6]   [1m[36mPaperTrail::Version Create (0.2ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 12], ["event", "update"], ["object", "---\nid: 12\ntitle: Updated 6 Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 08:59:49.526077000 Z\nupdated_at: 2021-10-26 10:08:15.440259000 Z\n"], ["created_at", "2021-10-26 10:08:15.440000"]]
+[ActiveJob] [VersionJob] [4187d0b4-daa8-46c2-8b6b-7f2023831ef6]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [4187d0b4-daa8-46c2-8b6b-7f2023831ef6]   [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [4187d0b4-daa8-46c2-8b6b-7f2023831ef6]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [4187d0b4-daa8-46c2-8b6b-7f2023831ef6] Performed VersionJob (Job ID: 4187d0b4-daa8-46c2-8b6b-7f2023831ef6) from Sidekiq(default) in 3.94ms
+  [1m[36mPaperTrail::Version Load (0.1ms)[0m  [1m[34mSELECT  "versions".* FROM "versions" ORDER BY "versions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPaperTrail::Version Load (0.2ms)[0m  [1m[34mSELECT  "versions".* FROM "versions" ORDER BY "versions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPaperTrail::Version Load (0.1ms)[0m  [1m[34mSELECT  "versions".* FROM "versions" ORDER BY "versions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPaperTrail::Version Load (0.1ms)[0m  [1m[34mSELECT  "versions".* FROM "versions" ORDER BY "versions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+Migrating to CreateVersions (20211025131539)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mDROP INDEX "index_versions_on_item_type_and_item_id"[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "versions"[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20211025131539"]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+Migrating to CreatePosts (20211025131239)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20211025131239"]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+Migrating to CreatePosts (20211025131239)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20211025131239_create_posts.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20211025131239_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211025131239"]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+Migrating to CreateVersions (20211025131539)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "versions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "item_type" varchar NOT NULL, "item_id" integer NOT NULL, "event" varchar NOT NULL, "whodunnit" varchar, "object" text(1073741823), "created_at" datetime)[0m
+  ↳ db/migrate/20211025131539_create_versions.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_versions_on_item_type_and_item_id" ON "versions" ("item_type", "item_id")[0m
+  ↳ db/migrate/20211025131539_create_versions.rb:34
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211025131539"]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+Migrating to CreateVersions (20211025131539)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[35mDROP INDEX "index_versions_on_item_type_and_item_id"[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "versions"[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20211025131539"]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+Migrating to CreateVersions (20211025131539)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20211025131539_create_versions.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "versions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "item_type" varchar NOT NULL, "item_id" integer NOT NULL, "event" varchar NOT NULL, "whodunnit" varchar, "object" text(1073741823), "object_changes" text(1073741823), "created_at" datetime)[0m
+  ↳ db/migrate/20211025131539_create_versions.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_versions_on_item_type_and_item_id" ON "versions" ("item_type", "item_id")[0m
+  ↳ db/migrate/20211025131539_create_versions.rb:35
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211025131539"]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.8/lib/ruby/gems/2.5.0/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Test 1"], ["body", "Body Test 1"], ["created_at", "2021-10-26 10:54:47.953078"], ["updated_at", "2021-10-26 10:54:47.953078"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] Enqueued VersionJob (Job ID: 73ee6a4d-6742-4f09-b3a5-006d99c69bd4) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"create\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:54:47.953Z\",\"object_changes\":\"---\\nid:\\n- \\n- 1\\ntitle:\\n- \\n- Title Test 1\\nbody:\\n- \\n- Body Test 1\\ncreated_at:\\n- \\n- \\u00261 2021-10-26 10:54:47.953078367 Z\\nupdated_at:\\n- \\n- *1\\n\",\"item_id\":1,\"item_type\":\"Post\"}", "create"
+[ActiveJob] [VersionJob] [73ee6a4d-6742-4f09-b3a5-006d99c69bd4] Performing VersionJob (Job ID: 73ee6a4d-6742-4f09-b3a5-006d99c69bd4) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"create\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:54:47.953Z\",\"object_changes\":\"---\\nid:\\n- \\n- 1\\ntitle:\\n- \\n- Title Test 1\\nbody:\\n- \\n- Body Test 1\\ncreated_at:\\n- \\n- \\u00261 2021-10-26 10:54:47.953078367 Z\\nupdated_at:\\n- \\n- *1\\n\",\"item_id\":1,\"item_type\":\"Post\"}", "create"
+[ActiveJob] [VersionJob] [73ee6a4d-6742-4f09-b3a5-006d99c69bd4]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [73ee6a4d-6742-4f09-b3a5-006d99c69bd4]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [73ee6a4d-6742-4f09-b3a5-006d99c69bd4]   [1m[36mPaperTrail::Version Create (0.3ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object_changes", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 1], ["event", "create"], ["object_changes", "---\nid:\n- \n- 1\ntitle:\n- \n- Title Test 1\nbody:\n- \n- Body Test 1\ncreated_at:\n- \n- &1 2021-10-26 10:54:47.953078367 Z\nupdated_at:\n- \n- *1\n"], ["created_at", "2021-10-26 10:54:47.953000"]]
+[ActiveJob] [VersionJob] [73ee6a4d-6742-4f09-b3a5-006d99c69bd4]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [73ee6a4d-6742-4f09-b3a5-006d99c69bd4]   [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [73ee6a4d-6742-4f09-b3a5-006d99c69bd4]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [73ee6a4d-6742-4f09-b3a5-006d99c69bd4] Performed VersionJob (Job ID: 73ee6a4d-6742-4f09-b3a5-006d99c69bd4) from Sidekiq(default) in 14.85ms
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "versions"[0m
+  [1m[36mPost Update (2.6ms)[0m  [1m[33mUPDATE "posts" SET "title" = ? WHERE "posts"."id" = ?[0m  [["title", "Updated 6 Title Test 1"], ["id", 1]]
+record_update_columns
+[ActiveJob] Enqueued VersionJob (Job ID: 55505a0d-b808-4953-ad59-e8ec95c8313b) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:54:47.953Z\",\"object\":\"---\\nid: 1\\ntitle: Updated 6 Title Test 1\\nbody: Body Test 1\\ncreated_at: \\u00261 2021-10-26 10:54:47.953078367 Z\\nupdated_at: *1\\n\",\"object_changes\":\"---\\n:title:\\n- Title Test 1\\n- Updated 6 Title Test 1\\n\",\"item_id\":1,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [55505a0d-b808-4953-ad59-e8ec95c8313b] Performing VersionJob (Job ID: 55505a0d-b808-4953-ad59-e8ec95c8313b) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:54:47.953Z\",\"object\":\"---\\nid: 1\\ntitle: Updated 6 Title Test 1\\nbody: Body Test 1\\ncreated_at: \\u00261 2021-10-26 10:54:47.953078367 Z\\nupdated_at: *1\\n\",\"object_changes\":\"---\\n:title:\\n- Title Test 1\\n- Updated 6 Title Test 1\\n\",\"item_id\":1,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [55505a0d-b808-4953-ad59-e8ec95c8313b]   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [55505a0d-b808-4953-ad59-e8ec95c8313b]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [55505a0d-b808-4953-ad59-e8ec95c8313b]   [1m[36mPaperTrail::Version Create (0.2ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "object_changes", "created_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 1], ["event", "update"], ["object", "---\nid: 1\ntitle: Updated 6 Title Test 1\nbody: Body Test 1\ncreated_at: &1 2021-10-26 10:54:47.953078367 Z\nupdated_at: *1\n"], ["object_changes", "---\n:title:\n- Title Test 1\n- Updated 6 Title Test 1\n"], ["created_at", "2021-10-26 10:54:47.953000"]]
+[ActiveJob] [VersionJob] [55505a0d-b808-4953-ad59-e8ec95c8313b]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [55505a0d-b808-4953-ad59-e8ec95c8313b]   [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [55505a0d-b808-4953-ad59-e8ec95c8313b]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [55505a0d-b808-4953-ad59-e8ec95c8313b] Performed VersionJob (Job ID: 55505a0d-b808-4953-ad59-e8ec95c8313b) from Sidekiq(default) in 4.34ms
+  [1m[36mPaperTrail::Version Load (0.1ms)[0m  [1m[34mSELECT  "versions".* FROM "versions" ORDER BY "versions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Update (0.1ms)[0m  [1m[33mUPDATE "posts" SET "title" = ? WHERE "posts"."id" = ?[0m  [["title", "Updated 6 Title Test 1"], ["id", 1]]
+record_update_columns
+[ActiveJob] Enqueued VersionJob (Job ID: 6d31027a-f049-40d9-8be1-45b04263d436) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:54:47.953Z\",\"object\":\"---\\nid: 1\\ntitle: Updated 6 Title Test 1\\nbody: Body Test 1\\ncreated_at: \\u00261 2021-10-26 10:54:47.953078367 Z\\nupdated_at: *1\\n\",\"object_changes\":\"---\\n:title:\\n- Updated 6 Title Test 1\\n- Updated 6 Title Test 1\\n\",\"item_id\":1,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [6d31027a-f049-40d9-8be1-45b04263d436] Performing VersionJob (Job ID: 6d31027a-f049-40d9-8be1-45b04263d436) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:54:47.953Z\",\"object\":\"---\\nid: 1\\ntitle: Updated 6 Title Test 1\\nbody: Body Test 1\\ncreated_at: \\u00261 2021-10-26 10:54:47.953078367 Z\\nupdated_at: *1\\n\",\"object_changes\":\"---\\n:title:\\n- Updated 6 Title Test 1\\n- Updated 6 Title Test 1\\n\",\"item_id\":1,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [6d31027a-f049-40d9-8be1-45b04263d436]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [6d31027a-f049-40d9-8be1-45b04263d436]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [6d31027a-f049-40d9-8be1-45b04263d436]   [1m[36mPaperTrail::Version Create (0.2ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "object_changes", "created_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 1], ["event", "update"], ["object", "---\nid: 1\ntitle: Updated 6 Title Test 1\nbody: Body Test 1\ncreated_at: &1 2021-10-26 10:54:47.953078367 Z\nupdated_at: *1\n"], ["object_changes", "---\n:title:\n- Updated 6 Title Test 1\n- Updated 6 Title Test 1\n"], ["created_at", "2021-10-26 10:54:47.953000"]]
+[ActiveJob] [VersionJob] [6d31027a-f049-40d9-8be1-45b04263d436]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [6d31027a-f049-40d9-8be1-45b04263d436]   [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [6d31027a-f049-40d9-8be1-45b04263d436]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [6d31027a-f049-40d9-8be1-45b04263d436] Performed VersionJob (Job ID: 6d31027a-f049-40d9-8be1-45b04263d436) from Sidekiq(default) in 4.43ms
+  [1m[36mPaperTrail::Version Load (0.1ms)[0m  [1m[34mSELECT  "versions".* FROM "versions" ORDER BY "versions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Update (2.8ms)[0m  [1m[33mUPDATE "posts" SET "title" = ? WHERE "posts"."id" = ?[0m  [["title", "Updated 7 Title Test 1"], ["id", 1]]
+record_update_columns
+  [1m[36mPost Update (0.2ms)[0m  [1m[33mUPDATE "posts" SET "title" = ? WHERE "posts"."id" = ?[0m  [["title", "Updated 7 Title Test 1"], ["id", 1]]
+record_update_columns
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Update (2.8ms)[0m  [1m[33mUPDATE "posts" SET "title" = ? WHERE "posts"."id" = ?[0m  [["title", "Updated 1 Title Test 1"], ["id", 1]]
+record_update_columns
+[ActiveJob] [VersionJob] [174b783a-5d54-4bad-aff5-5f253f23301e] Performing VersionJob (Job ID: 174b783a-5d54-4bad-aff5-5f253f23301e) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:54:47.953Z\",\"object\":\"---\\nid: 1\\ntitle: Updated 1 Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 10:54:47.953078000 Z\\nupdated_at: 2021-10-26 10:54:47.953078000 Z\\n\",\"object_changes\":\"---\\n:title:\\n- Updated 7 Title Test 1\\n- Updated 1 Title Test 1\\n\",\"item_id\":1,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [174b783a-5d54-4bad-aff5-5f253f23301e]   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [174b783a-5d54-4bad-aff5-5f253f23301e]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [174b783a-5d54-4bad-aff5-5f253f23301e]   [1m[36mPaperTrail::Version Create (0.4ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "object_changes", "created_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 1], ["event", "update"], ["object", "---\nid: 1\ntitle: Updated 1 Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 10:54:47.953078000 Z\nupdated_at: 2021-10-26 10:54:47.953078000 Z\n"], ["object_changes", "---\n:title:\n- Updated 7 Title Test 1\n- Updated 1 Title Test 1\n"], ["created_at", "2021-10-26 10:54:47.953000"]]
+[ActiveJob] [VersionJob] [174b783a-5d54-4bad-aff5-5f253f23301e]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] Enqueued VersionJob (Job ID: 174b783a-5d54-4bad-aff5-5f253f23301e) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:54:47.953Z\",\"object\":\"---\\nid: 1\\ntitle: Updated 1 Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 10:54:47.953078000 Z\\nupdated_at: 2021-10-26 10:54:47.953078000 Z\\n\",\"object_changes\":\"---\\n:title:\\n- Updated 7 Title Test 1\\n- Updated 1 Title Test 1\\n\",\"item_id\":1,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [174b783a-5d54-4bad-aff5-5f253f23301e]   [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [174b783a-5d54-4bad-aff5-5f253f23301e]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [174b783a-5d54-4bad-aff5-5f253f23301e] Performed VersionJob (Job ID: 174b783a-5d54-4bad-aff5-5f253f23301e) from Sidekiq(default) in 6.68ms
+  [1m[36mPost Update (0.2ms)[0m  [1m[33mUPDATE "posts" SET "title" = ? WHERE "posts"."id" = ?[0m  [["title", "Updated 1 Title Test 1"], ["id", 1]]
+record_update_columns
+[ActiveJob] Enqueued VersionJob (Job ID: 4c96c617-7b71-44f9-9d13-57e06c1ebb3b) to Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:54:47.953Z\",\"object\":\"---\\nid: 1\\ntitle: Updated 1 Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 10:54:47.953078000 Z\\nupdated_at: 2021-10-26 10:54:47.953078000 Z\\n\",\"object_changes\":\"---\\n:title:\\n- Updated 1 Title Test 1\\n- Updated 1 Title Test 1\\n\",\"item_id\":1,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [4c96c617-7b71-44f9-9d13-57e06c1ebb3b] Performing VersionJob (Job ID: 4c96c617-7b71-44f9-9d13-57e06c1ebb3b) from Sidekiq(default) with arguments: "PaperTrail::Version", "{\"event\":\"update\",\"whodunnit\":null,\"created_at\":\"2021-10-26T10:54:47.953Z\",\"object\":\"---\\nid: 1\\ntitle: Updated 1 Title Test 1\\nbody: Body Test 1\\ncreated_at: 2021-10-26 10:54:47.953078000 Z\\nupdated_at: 2021-10-26 10:54:47.953078000 Z\\n\",\"object_changes\":\"---\\n:title:\\n- Updated 1 Title Test 1\\n- Updated 1 Title Test 1\\n\",\"item_id\":1,\"item_type\":\"Post\"}", "update"
+[ActiveJob] [VersionJob] [4c96c617-7b71-44f9-9d13-57e06c1ebb3b]   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [VersionJob] [4c96c617-7b71-44f9-9d13-57e06c1ebb3b]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [4c96c617-7b71-44f9-9d13-57e06c1ebb3b]   [1m[36mPaperTrail::Version Create (0.2ms)[0m  [1m[32mINSERT INTO "versions" ("item_type", "item_id", "event", "object", "object_changes", "created_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["item_type", "Post"], ["item_id", 1], ["event", "update"], ["object", "---\nid: 1\ntitle: Updated 1 Title Test 1\nbody: Body Test 1\ncreated_at: 2021-10-26 10:54:47.953078000 Z\nupdated_at: 2021-10-26 10:54:47.953078000 Z\n"], ["object_changes", "---\n:title:\n- Updated 1 Title Test 1\n- Updated 1 Title Test 1\n"], ["created_at", "2021-10-26 10:54:47.953000"]]
+[ActiveJob] [VersionJob] [4c96c617-7b71-44f9-9d13-57e06c1ebb3b]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [4c96c617-7b71-44f9-9d13-57e06c1ebb3b]   [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [VersionJob] [4c96c617-7b71-44f9-9d13-57e06c1ebb3b]   ↳ /home/mona/modified-gems/paper_trail-background/lib/paper_trail/background/sidekiq.rb:5
+[ActiveJob] [VersionJob] [4c96c617-7b71-44f9-9d13-57e06c1ebb3b] Performed VersionJob (Job ID: 4c96c617-7b71-44f9-9d13-57e06c1ebb3b) from Sidekiq(default) in 4.58ms
+  [1m[36mPaperTrail::Version Load (0.1ms)[0m  [1m[34mSELECT  "versions".* FROM "versions" ORDER BY "versions"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPaperTrail::Version Load (0.1ms)[0m  [1m[34mSELECT  "versions".* FROM "versions" ORDER BY "versions"."id" DESC LIMIT ?[0m  [["LIMIT", 2]]

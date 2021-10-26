@@ -1,5 +1,7 @@
 $:.push File.expand_path(File.join("..", "lib"), __FILE__)
-require "paper_trail-background"
+# require "paper_trail-background"
+require "paper_trail/background/version"
+
 
 Gem::Specification.new do |spec|
   spec.name = "paper_trail-background"
@@ -14,11 +16,13 @@ Gem::Specification.new do |spec|
   spec.files = Dir[File.join("lib", "**", "*"), "LICENSE", "README.md", "Rakefile"]
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency "rails", "~> 5.2.6"
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rspec", "~> 3.8"
   spec.add_development_dependency "rake", "~> 12.2"
   spec.add_development_dependency "pry", "0.11.2"
   spec.add_development_dependency "pry-doc", "0.11.1"
+  spec.add_runtime_dependency "sidekiq", "~> 5.2.9"
   spec.add_runtime_dependency "ar_after_transaction", "0.5.0"
   spec.add_runtime_dependency "paper_trail", "10.0.1"
 end
