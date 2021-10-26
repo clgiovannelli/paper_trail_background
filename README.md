@@ -1,8 +1,8 @@
-# paper_trail-background
+# paper_trail_background
 
-  - [![Build](http://img.shields.io/travis-ci/krainboltgreene/paper_trail-background.svg?style=flat-square)](https://travis-ci.org/krainboltgreene/paper_trail-background)
-  - [![Downloads](http://img.shields.io/gem/dtv/paper_trail-background.svg?style=flat-square)](https://rubygems.org/gems/paper_trail-background)
-  - [![Version](http://img.shields.io/gem/v/paper_trail-background.svg?style=flat-square)](https://rubygems.org/gems/paper_trail-background)
+  - [![Build](http://img.shields.io/travis-ci/krainboltgreene/paper_trail_background.svg?style=flat-square)](https://travis-ci.org/krainboltgreene/paper_trail_background)
+  - [![Downloads](http://img.shields.io/gem/dtv/paper_trail_background.svg?style=flat-square)](https://rubygems.org/gems/paper_trail_background)
+  - [![Version](http://img.shields.io/gem/v/paper_trail_background.svg?style=flat-square)](https://rubygems.org/gems/paper_trail_background)
 
 
 Allows you to enqueue version creation/deletion as a background job to avoid having business logic blocked by changelog writing.
@@ -34,11 +34,11 @@ end
 
 Run this command in your project:
 
-    $ bundle add paper_trail-background
+    $ bundle add paper_trail_background
 
 Or install it yourself with:
 
-    $ gem install paper_trail-background
+    $ gem install paper_trail_background
 
 
 ## Contributing

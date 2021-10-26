@@ -10,5 +10,5 @@ class VersionJob < ApplicationJob
   # )
 
   # This wires up the background job
-  include PaperTrail::Background::Sidekiq
+  include PaperTrailBackground::Sidekiq
 end

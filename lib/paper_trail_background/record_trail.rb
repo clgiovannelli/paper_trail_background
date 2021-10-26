@@ -1,8 +1,7 @@
-module PaperTrail
-  require_relative "background/version"
-  require_relative "background/sidekiq"
+module PaperTrailBackground
+  require_relative 'sidekiq'
 
-  module Background
+  module RecordTrail
     # @api private
     # @return - The created version object, so that plugins can use it, e.g.
     # paper_trail-association_tracking
@@ -70,21 +69,20 @@ module PaperTrail
       trigger_write(@record, data, :update)
     end
 
-    private def trigger_write(record, data, event)
+    private
+
+    def trigger_write(record, data, event)
       version_class = record.class.paper_trail.version_class
 
-      version_class.after_transaction do
+      record.class.after_commit do
         VersionJob.perform_later(
-          version_class.to_s,
-          data.merge(
-            :item_id => record.id,
-            :item_type => record.class.name
-          ).to_json,
-          event.to_s
+          version_class,
+          data.merge(item_id: record.id, item_type: record.class.name),
+          event
         )
       end
     end
   end
 end
 
-PaperTrail::RecordTrail.prepend(PaperTrail::Background)
+PaperTrail::RecordTrail.prepend(PaperTrailBackground::RecordTrail)

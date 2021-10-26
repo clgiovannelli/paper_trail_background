@@ -3,7 +3,7 @@ require_relative 'boot'
 require 'rails/all'
 
 Bundler.require(*Rails.groups)
-require "paper_trail/background"
+require 'paper_trail_background'
 
 module Dummy
   class Application < Rails::Application
