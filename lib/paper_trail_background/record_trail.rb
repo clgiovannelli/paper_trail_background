@@ -73,10 +73,9 @@ module PaperTrailBackground
 
     def trigger_write(record, data, event)
       version_class = record.class.paper_trail.version_class
-
-      record.class.after_commit do
+      version_class.after_transaction do
         VersionJob.perform_later(
-          version_class,
+          version_class.to_s,
           data.merge(item_id: record.id, item_type: record.class.name),
           event
         )
