@@ -1,6 +1,6 @@
 require "pry"
 require "rspec"
-require "paper_trail-background"
+require "paper_trail_background"
 
 RSpec.configure do |let|
   # Exit the spec after the first failure

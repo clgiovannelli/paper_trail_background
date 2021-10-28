@@ -19,9 +19,20 @@
 /vendor/cache
 /vendor/ruby
 
-# Ignore all tempfiles
-/tmp
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+/test/dummy/log/*
+/test/dummy/tmp/*
+!/log/.keep
+!/tmp/.keep
+!/test/dummy/log/.keep
+!/test/dummy/tmp/.keep
+
 
 # Ignores that should be in the global gitignore
 /coverage
 /doc
+
+/test/dummy/.byebug_history
+/test/dummy/db/development.sqlite3
