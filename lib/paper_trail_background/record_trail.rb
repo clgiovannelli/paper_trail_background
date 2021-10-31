@@ -76,8 +76,9 @@ module PaperTrailBackground
       version_class.after_transaction do
         PaperTrailBackground.version_job_class.perform_later(
           version_class.to_s,
-          data.merge(item_id: record.id, item_type: record.class.name),
-          event
+          data.except(:item).merge(
+            item_id: record.id, item_type: record.class.name
+          ).as_json, event
         )
       end
     end
